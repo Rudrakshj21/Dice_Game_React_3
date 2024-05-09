@@ -1,0 +1,104 @@
+.play {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  height: 100vh;
+}
+
+.score_wrapper .title,
+.score_wrapper .score {
+  font-size: 80px;
+}
+.score_wrapper .score {
+  text-align: center;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  width: 100%;
+  margin: 0px;
+  justify-content: space-between;
+  padding: 0px 40px;
+}
+
+/* numbers */
+.number_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.number_wrapper button {
+  padding: 30px 50px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+  font-weight: bold;
+  background-color: rgb(250, 27, 27);
+  transition: background-color 0.5s;
+}
+
+.number_wrapper .message {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  font-size: 30px;
+  word-spacing: 5px;
+  color: rgb(243, 237, 232);
+}
+.number_wrapper button:hover {
+  background-color: rgb(229, 111, 111);
+  color: blueviolet;
+}
+.numbers {
+  margin-top: 30px;
+}
+
+/* dice */
+.dice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.dice button {
+  background-color: tan;
+  padding: 20px 40px;
+  border-radius: 10px;
+  border: none;
+  transition: background-color 0.5s;
+}
+.dice button:hover {
+  background-color: antiquewhite;
+}
+.dice img {
+  cursor: pointer;
+  width: 150px;
+  transition: margin 0.5s;
+  object-fit: cover;
+}
+.dice img:active {
+  background-color: white;
+}
+
+/* rules */
+
+.rules {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 36%;
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
