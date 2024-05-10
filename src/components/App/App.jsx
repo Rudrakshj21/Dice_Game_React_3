@@ -4,9 +4,10 @@ import Button from "../Button/Button";
 import "./App.css";
 import Dice from "../Dice/Dice";
 function App() {
-  const [playNow, setPlayNow] = useState(true);
+  const [playNow, setPlayNow] = useState(false);
+
   function startGame() {
-    console.log('hi')
+    console.log("game started");
     setPlayNow((play) => !play);
   }
   return (

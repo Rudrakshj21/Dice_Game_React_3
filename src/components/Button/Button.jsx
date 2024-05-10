@@ -1,7 +1,11 @@
-import "./Button.modules.css"
-function Button({ children, handler, className }) {
+import "./Button.modules.css";
+function Button({ children, handler, className}) {
   return (
-    <button className={className || ""} onClick={handler}>
+    <button
+      className={className || ""}
+      onClick={(event) => handler(event)}
+      value={children}
+    >
       {children}
     </button>
   );
